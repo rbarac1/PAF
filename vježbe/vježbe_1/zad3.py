@@ -34,5 +34,5 @@ a = (y2-y1)/(x2-x1)
 #pomak na y osi
 b = y1 - a*x1
 
-#printanje jednadbžbe pravca, za veću preciznost mijenjajte preciznost broj znamenki i decimala u floatu
+#printanje jednadbžbe pravca, za veću preciznost mijenjajte broj znamenki i decimala u ispisu floata
 print("Jednažba pravca je y = {:5.4f} x + {:5.4f}".format(a,b))
