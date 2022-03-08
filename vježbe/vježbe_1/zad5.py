@@ -23,8 +23,9 @@ def pr(x1, y1, x2, y2):
     if g==1:
         plt.show()
     elif g==2:
-        print("Graf je spremljen u file pod imenom pravac.pdf")
-        plt.savefig("pravac.pdf")
+        ime = input("Unesite ime datoteke: ")
+        print("Graf je spremljen u file pod imenom "+ime+".pdf")
+        plt.savefig(ime+".pdf")
     return a,b,g
 
 
@@ -59,4 +60,5 @@ while i:
         i = 0
 
 
+#pozivanje funkcije
 pr(x1, y1, x2, y2)
