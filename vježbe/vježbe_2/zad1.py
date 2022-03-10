@@ -24,22 +24,22 @@ for i in range(N):
 
 t = np.linspace(0, T, N+1)
 
-fig, (ax1,ax2,ax3) = plt.subplots(3,1, figsize=(7,10))
+fig, (ax1,ax2,ax3) = plt.subplots(1,3, figsize=(12,6))
 
 #graf položaja
-ax1.plot(t,x)
+ax1.plot(t,x, c='b')
 ax1.title.set_text('Položaj')
 ax1.set_xlabel(r'$t[s]$')
 ax1.set_ylabel(r'$x[m]$')
 
 #graf brzine
-ax2.plot(t,v)
+ax2.plot(t,v, c='r')
 ax2.title.set_text('Brzina')
 ax2.set_xlabel(r'$t[s]$')
 ax2.set_ylabel(r'$v[m/s]$')
 
 #graf akceleracije
-ax3.plot(t,len(t)*[a])
+ax3.plot(t,len(t)*[a], c='g')
 ax3.title.set_text('Akceleracija')
 ax3.set_xlabel(r'$t[s]$')
 ax3.set_ylabel(r'$a[m/s^2]$')
