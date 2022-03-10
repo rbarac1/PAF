@@ -18,11 +18,11 @@ dt = T/N #vremenska razlika između koraka
 N = int(N)
 
 #numeričko računanje brzine i položaja
-for i in range(N-1):
+for i in range(N):
     v += [v[i]+a*dt]
     x += [x[i]+v[i+1]*dt]
 
-t = np.linspace(0, T, N)
+t = np.linspace(0, T, N+1)
 
 fig, (ax1,ax2,ax3) = plt.subplots(3,1, figsize=(7,10))
 
