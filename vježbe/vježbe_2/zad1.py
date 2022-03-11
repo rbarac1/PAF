@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 
 T = 10. #vrijeme gibanja u sekundama
 
+#unosi korisnik
 F = 10. #iznos sile u newtonima
 m = 5. #masa čestice u kg
 
