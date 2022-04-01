@@ -50,6 +50,7 @@ plt.plot([0,1], [Tan,Tan], c="red", label="analitičko rješenje")
 plt.title("Period titranja", fontsize=14)
 plt.ylabel("period[s]", fontsize=14)
 plt.xlabel("vrijeme[s]", fontsize=14)
+plt.xlim(0,1)
 plt.legend()
 plt.tight_layout()
 
