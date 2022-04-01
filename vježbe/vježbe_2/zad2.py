@@ -47,7 +47,7 @@ def kh(v0, th):
     ax3.plot(t,y, c='g')
     ax3.title.set_text('y položaj u vremenu (y-t graf)')
     ax3.set_xlabel(r'$t[s]$')
-    ax3.set_ylabel(r'$ym]$')
+    ax3.set_ylabel(r'$y[m]$')
 
     #plotanje
     plt.tight_layout()
