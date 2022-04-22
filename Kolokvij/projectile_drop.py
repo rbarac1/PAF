@@ -63,7 +63,7 @@ class ProjectileDrop:
         self.reset()
         self.vx = [self.vx[0]+wind_v] #neki čudan vjetar
         self.drop()
-        T_old = self.t[-1]
+        T_old = self.t[0]
         T_change = 0.5    #promjena vremena u sekundama
 
         while(np.abs(self.x[-1]-xtarget)>wtarget):
@@ -73,7 +73,7 @@ class ProjectileDrop:
             else:
                 i = -1
 
-            T_old = self.t[-1]
+            T_old = self.t[0]
             x_old = self.x[-1]
             self.reset()
             self.vx = [self.vx[0]+wind_v]
