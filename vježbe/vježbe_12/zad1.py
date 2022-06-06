@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #https://nssdc.gsfc.nasa.gov/planetary/factsheet/planet_table_ratio.html
-
+#pretpostavljamo da su sve orbite kružne
 sun = universe.Cobject(333000,0,0,0,0)
 earth = universe.Cobject(1,1,0,0,2*np.pi)
 mercury = universe.Cobject(0.0553,0.387,0,0,2*np.pi*1.59)
